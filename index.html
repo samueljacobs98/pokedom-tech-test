@@ -16,7 +16,25 @@
   </head>
   <body>
     <h1>PokéDom- gotta code 'em all!</h1>
-
+    <fieldset class="filters">
+      <legend>Filter Results</legend>
+      <div class="filters__container filters__search-container">
+        <label for="search">Search by Name</label>
+        <input type="search" name="search" id="search">
+        <button class="search-btn">Search</button>      
+      </div>
+      <div class="filters__container filters__by-type-container">
+        <label for="type">Type</label>
+        <select name="types" id="types">
+        </select>
+        <button class="filter-type">filter type</button>      
+      </div>
+      <div class="filters__container items-number-container">
+        <label for="items">Poke-per-page</label>
+        <input type="text" name="items" id="items">
+        <button class="items-btn">Update</button>      
+      </div>
+    </fieldset>
     <main class="card-container"></main>
 
     <script src="./script.js" type="module"></script>

@@ -11,6 +11,25 @@ body {
   padding: 1rem;
 }
 
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0.5rem;
+
+  .filters__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+  }
+  .filters__container > * {
+    margin: 2px;
+  }
+}
+
 .card-container {
   margin-top: 1rem;
   display: grid;
