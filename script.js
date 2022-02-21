@@ -9,6 +9,7 @@ const searchBtn = document.querySelector(".search-btn");
 const filterNameSelected = document.getElementById("search");
 const updateBtn = document.querySelector(".items-btn");
 const itemsNumber = document.getElementById("items");
+const reset = document.querySelector(".reset")
 
 // Functions
 const capitalise = (word) => {
@@ -60,6 +61,10 @@ const updateItems = () => {
   }
 };
 
+const resetItems = () => {
+  display()
+}
+
 const display = (fileteredPokemonArray, countMax) => {
   fileteredPokemonArray = fileteredPokemonArray || pokemonArray;
   countMax = countMax || fileteredPokemonArray.length;
@@ -97,3 +102,4 @@ window.onload = function () {
 filterTypesBtn.addEventListener("click", filterByType);
 searchBtn.addEventListener("click", filterByName);
 updateBtn.addEventListener("click", updateItems);
+reset.addEventListener("click", resetItems)
